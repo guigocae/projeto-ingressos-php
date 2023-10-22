@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    background: #f5f5dc;
+    color: #004225;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 10%;
+    background-color: #004225;
+    color: #f5f5dc;
+}
+.titulo {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.titulo.logo {
+    letter-spacing: 1px;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#logo-principal {
+    width: 25px;
+    display: block;
+}
+.nome {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.nome a {
+    color: #FFB000;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+.nome a:hover{
+    color: #FFCF9D;
+}
+main {
+    display: flex;
+}
+nav {
+    width: 15vw;
+    max-width: 220px;
+    border-right: 1px solid #004225;
+    height: 100vh;
+}
+nav a {
+    display: block;
+    color: #004225;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding-block: 20px;
+}
+nav a:hover {
+    background-color: #004225;
+    color: #f5f5dc;
+}
+.fa-solid {
+    margin-right: 5px;
+}
+.conteudo {
+    padding: 25px 40px;
+    width: 100%;
+    position: relative;
+}
+#plano-atual {
+    position: absolute;
+    right: 48px;
+    top: 28px;
+    font-weight: 600;
+}
+.container {
+    padding: 25px 30px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 15px;
+}
+.titulo-page {
+    font-size: 1.5em;
+    font-weight: 800;
+}

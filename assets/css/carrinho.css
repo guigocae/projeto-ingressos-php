@@ -1,0 +1,18 @@
+h3 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.valor-total {
+    border: 1px solid #004225;
+    padding: 10px;
+    display: inline-block;
+}
+strong {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+ul {
+    padding: 15px 25px;
+    margin-bottom: 10px;
+}
