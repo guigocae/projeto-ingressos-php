@@ -12,5 +12,5 @@
     $_SESSION["estudante"] = $estudante;
     $_SESSION["plano"] = $plano;
 
-    header("Location: ../index.php");
+    header("Location: ../../index.php");
 ?>

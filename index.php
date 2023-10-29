@@ -1,3 +1,4 @@
+<!-- Remove o erro caso session já estiver iniciado em outra página -->
 <?php
     if(!isset($_SESSION)){ 
         session_start(); 
@@ -9,10 +10,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -59,7 +62,7 @@
         <div class="nome">
             <!-- Mostra o nome coletado no cadastro -->
             <span class="titulo">Olá, <?php echo $_SESSION["nome"]; ?>!</span>
-            <a href="./sair.php"><i class="fa-solid fa-door-open"></i> Sair</a>
+            <a href="./assets/pages/sair.php"><i class="fa-solid fa-door-open"></i> Sair</a>
         </div>
     </header>
     <main>
@@ -75,21 +78,21 @@
             <h3 id="plano-atual">Plano <?php echo $_SESSION["plano"]; ?></h3>
             <div class="container">
                 <h2>Comprar Ingresso:</h2>
-                <form action="./comprar.php" method="post">
+                <form action="./assets/pages/comprar.php" method="post">
                     <!-- Selecionar o jogo -->
                     <div class="form-div">
                         <fieldset>
                             <legend class="titulo-form">Selecione o jogo:</legend>
                             <div class="jogo">
-                                <input type="radio" id="saopaulo" name="jogo" value="sao-paulo" required>
+                                <input type="radio" id="saopaulo" name="jogo" value="Palmeiras X São Paulo" required>
                                 <label for="saopaulo">Palmeiras X São Paulo</label>
                             </div>
                             <div class="jogo">
-                                <input type="radio" id="bahia" name="jogo" value="bahia">
+                                <input type="radio" id="bahia" name="jogo" value="Palmeiras X Bahia">
                                 <label for="bahia">Palmeiras X Bahia</label>
                             </div>
                             <div class="jogo">
-                                <input type="radio" id="botafogo" name="jogo" value="botafogo">
+                                <input type="radio" id="botafogo" name="jogo" value="Botafogo X Palmeiras">
                                 <label for="botafogo">Botafogo X Palmeiras</label>
                             </div>
                         </fieldset>
@@ -156,7 +159,7 @@
     ?>
         <div class="container container-cadastro">
         <h2 class="titulo-page"><i class="fa-solid fa-address-card"></i> Cadastro</h2>
-        <form action="./cadastro.php" method="post" class="form-cadastro">
+        <form action="./assets/pages/cadastro.php" method="post" class="form-cadastro">
             <div class="input-cad">
                 <label for="nome" class="titulo-form">Digite seu nome:</label>
                 <input type="text" maxlength="15" name="nome" id="nome" required>

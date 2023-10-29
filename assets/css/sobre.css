@@ -1,0 +1,19 @@
+.section {
+    padding-bottom: 22px;
+}
+h3{
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-bottom: 8px;
+}
+p {
+    padding-block: 8px;
+}
+ul {
+    padding-left: 20px;
+    padding-bottom: 8px;
+}
+.section, p, li {
+    text-align: justify;
+    text-justify: auto;
+}

@@ -24,7 +24,7 @@
         }
     </style>
 
-    <title>Document</title>
+    <title>Informações</title>
 </head>
 <body>
     <header>
@@ -49,6 +49,7 @@
             <h2 class="titulo-page"><i class="fa-solid fa-info"></i> Informações</h2>
             <div class="container">
                 <p>O preço dos ingressos é calculado de acordo com algumas regras e critérios.</p>
+                <p>*Os descontos são cumulativos</p>
                 <p class="table-title">Valor dos ingressos sem descontos:</p>
                 <table>
                     <tr>

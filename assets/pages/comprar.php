@@ -6,17 +6,7 @@
     $meia = $_POST["meia"];
     $ingresso = 0;
 
-    switch ($jogo) {
-        case "sao-paulo":
-            $_SESSION["jogo"] = "Palmeiras X São Paulo";
-            break;
-        case "bahia":
-            $_SESSION["jogo"] = "Palmeiras X Bahia";
-            break;
-        case "botafogo":
-            $_SESSION["jogo"] = "Botafogo X Palmeiras";
-            break;
-    }
+    $_SESSION["jogo"] = $jogo;
 
     if($setor == "norte"){
         $ingresso = 100;
@@ -77,5 +67,5 @@
     $_SESSION["ingresso"] = $ingresso_new;
     $_SESSION["ingresso_old"] = $ingresso;
 
-    header("Location: ./index.php");
+    header("Location: ../../index.php");
 ?>

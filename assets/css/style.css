@@ -50,7 +50,7 @@ nav {
     width: 15vw;
     max-width: 220px;
     border-right: 1px solid #004225;
-    height: 100vh;
+    min-height: calc(100vh - 78.5px);
 }
 nav a {
     display: block;
